@@ -1,0 +1,168 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #092bed;
+    --secondary-color: #041791;
+    --accent-color: #e74c3c;
+    --light-bg: #f5f6fa;
+    --white: #ffffff;
+    --shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+body {
+    background-color: var(--light-bg);
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 2rem 0;
+    color: var(--white);
+}
+
+.brand {
+    text-align: center;
+    padding: 1rem;
+}
+
+.brand-logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.brand-tagline {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Navigation */
+.nav {
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Components */
+.card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Product Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout - Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 1rem 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 1rem 0;
+        }
+        .cart-item img {
+            width: 100px;
+            height: auto;
+            border-radius: 4px;
+        }
+        .cart-details {
+            flex: 1;
+            margin-left: 1rem;
+        }
+        .cart-details h3 {
+            margin: 0;
+        }
+        .cart-details p {
+            margin: 0.5rem 0;
+        }
+        .cart-actions button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+        }
+        .cart-actions button:hover {
+            background-color: #555;
+        }
+        .total {
+            text-align: right;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .checkout-btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+        .checkout-btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion Store</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="checkout.html">checkout</a>
+        </nav>
+    </header>
+    <main>
+        
+        <h2>Your Shopping</h2>
+        <!-- Daftar Produk -->
+        <div class="cart-item">
+            <img src="TOPI.jpg " alt="Product Image">
+            <div class="cart-details">
+                <h3>TOPI 4</h3>
+                <p>Price: 100.000</p>
+                <p>Quantity: 1</p>
+            </div>
+            <div class="cart-actions">
+                <button>Remove</button>
+            </div>
+        </div>
+        <div class="cart-item">
+            <img src="celana jeans.jpg" alt="Product Image">
+            <div class="cart-details">
+                <h3>CELANA JEANS 2</h3>
+                <p>Price: 200.000</p>
+                <p>Quantity: 2</p>
+            </div>
+            <div class="cart-actions">
+                <button>Remove</button>
+            </div>
+        </div>
+        <!-- Total Harga -->
+        <div class="total">
+            Total: 300.000
+        </div>
+        <!-- Tombol Checkout -->
+        <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+    </main>
+</body>
+</html>

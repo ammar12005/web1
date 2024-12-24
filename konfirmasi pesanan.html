@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Pesanan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Fashion Store</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kategori.html">Kategori</a></li>
+                <li><a href="keranjang.html">Keranjang</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="order-confirmation">
+        <h2>Konfirmasi Pesanan</h2>
+        <p>Terima kasih telah berbelanja di Fashion Store. Berikut adalah detail pesanan Anda:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Produk</th>
+                    <th>Jumlah</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TOPI</td>
+                    <td>4</td>
+                    <td>Rp 100,000</td>
+                </tr>
+                <tr>
+                    <td>CELANA JEANS</td>
+                    <td>2</td>
+                    <td>Rp 200,000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Total Harga: Rp 300,000</p>
+        <p>Alamat Pengiriman: [Alamat yang dipilih]</p>
+        <p>Metode Pembayaran: Kartu Kredit</p>
+
+        <form action="terima_pesanan.html" method="POST">
+            <button type="submit">Konfirmasi Pembelian</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fashion Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

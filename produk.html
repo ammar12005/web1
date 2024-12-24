@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk -  FASHION STORE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+        }
+
+        .product-table th,
+        .product-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product-table th {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .product-table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .category-list {
+            list-style: none;
+        }
+
+        .category-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .category-list ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="brand">
+            <div class="brand-logo">FASHION STORE</div>
+            <div class="brand-tagline">Your Ultimate Fashion Destination</div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">homepage</a></li>
+            <li><a href="keranjang belanja.html" class="nav-link">keranjang belanja</a></li>
+            <li><a href="produk.html" class="nav-link">Produk</a></li>
+            <li><a href="chekout.html" class="nav-link">chekout</a></li>
+            <li><a href="konfirmasi pesanan.html" class="nav-link">konfirmasi pesanan</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>Produk Kami</h2>
+
+        <div class="card">
+            <h3>Kategori Produk</h3>
+            <ul class="category-list">
+                <li>Pakaian Pria
+                    <ul>
+                        <li>Topi</li>
+                        <li>Baju Polo</li>
+                        <li>Celana Jeans</li>
+                        <li>Sepatu</li>
+                        <li>Kemeja priaSSS</li>
+                    </ul>
+                </li>
+                <li>Aksesoris
+                    <ul>
+                        <li>Topi</li>
+                        <li>Jam Tanggan Pria</li>
+                        <li>Flat Shoes</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>Gambar</th>
+                    <th>Nama Produk</th>
+                    <th>Detail produk</th>
+                    <th>Harga</th>
+                    <th>Stok</th>
+                </tr>
+            </thead>
+            <tbody>
+                <li>Pakaian pria
+                </li>
+                
+                <tr>
+                    <td><img src="kemeja pria.jpg" alt="Gambar" width="100" height="100S"></td>
+                    <td>Kemeja Pria</td>
+                    <td>Kemeja pria dengan desain slim fit, cocok untuk acara formal maupun santai. Terbuat dari bahan katun premium, nyaman dipakai sepanjang hari.</td>
+                    <td>Rp 70.000</td>
+                    <td>20</td>
+                    <div class="product-options">
+                        <!-- Pilihan Ukuran -->
+                        <label for="size">Pilih Ukuran:</label>
+                        <select id="size">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <!-- Pilihan Warna -->
+                        <label for="color">Pilih Warna:</label>
+                        <select id="color">
+                            <option value="white">Putih</option>
+                            <option value="black">Hitam</option>
+                            <option value="blue">Biru</option>
+                        </select>
+                    </div>
+                </tr>
+                <tr>
+                    <td><img src="Jaket jeans.jpg" alt="Gambar" width="100" height="100S"></td>
+                    <td>Jaket Jeans</td>
+                    <td>Jaket jeans Denim Wear adalah pilihan sempurna untuk gaya kasual dan santai. Terbuat dari bahan denim premium yang tahan lama, jaket ini menawarkan kenyamanan maksimal dan desain stylish. Dengan aksen distressed dan potongan modern, jaket ini cocok untuk berbagai aktivitas, mulai dari hangout hingga perjalanan sehari-hari.</td>
+                    <td>Rp 200.000</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td><img src="celana jeans.jpg" alt="Gambar" width="100" height="100S"></td>
+                    <td>CELANA JEANS</td>
+                    <td>Celana jeans Casual Wear adalah pilihan ideal untuk tampilan sehari-hari yang nyaman namun tetap stylish. Dibuat dari bahan denim berkualitas tinggi, celana ini menawarkan daya tahan maksimal dan kenyamanan sepanjang hari. Desain potongan slim fit memberikan kesan modern dan ramping, sementara warna biru klasik memudahkan untuk dipadukan dengan berbagai atasan.</td>
+                    <td>Rp 100.000</td>
+                    <td>50</td>
+                </tr>
+                
+                <tr>
+                    <td><img src="Baju Polo.jpg" alt="Gambar" width="100" height="100S"></td>
+                    <td>BAJU POLO</td>
+                    <td>Celana jeans Casual Wear adalah pilihan ideal untuk tampilan sehari-hari yang nyaman namun tetap stylish. Dibuat dari bahan denim berkualitas tinggi, celana ini menawarkan daya tahan maksimal dan kenyamanan sepanjang hari. Desain potongan slim fit memberikan kesan modern dan ramping</td>
+                    <td>Rp 150.000</td>
+                    <td>60</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>Gambar</th>
+                    <th>nama produk</th>
+                    <th>Detail Produk</th>
+                    <th>Harga</th>
+                    <th>Stok</th>
+                </tr>
+            </thead>
+            <tbody>
+                <li>Aksesoris
+                </li>
+
+
+                <tr>
+                    <td><img src="TOPI.jpg" alt="Gambar" width="100" height="100S"></td>
+                    <td>TOPI</td>
+                    <td>Headwear</td>
+                    <td>Rp 25.000</td>
+                    <td>40</td>
+                
+                </tr>
+                <tr>
+                    <td><img src="jam tangan.jpg" alt="Gambar" width="100" height="100S"></td>
+                    <td>Jam Tangan Pria</td>
+                    <td>Alba</td>
+                    <td>Rp 500.000</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td><img src="kalung.jpg" alt="Gambar" width="100" height="100S"></td>
+                    <td>Kalung</td>
+                    <td>necklaces</td>
+                    <td>Rp 20.000</td>
+                    <td>60</td>
+                </select>
+                <!-- Pilihan Warna -->
+                <label for="color">Pilih Warna:</label>
+                <select id="color">
+                    <option value="white">Putih</option>
+                    <option value="black">Hitam</option>
+                    <option value="blue">Biru</option>
+                </select>
+                    
+                </tr>
+        </tbody>
+        <div class

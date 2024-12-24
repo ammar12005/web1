@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .category-card {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .category-card img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .category-card h3 {
+            margin: 0.5rem 0;
+        }
+        .category-card a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .category-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion Store</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="kategori produk.html">kategori produk</a>
+            <a href="checkout.html">checkout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Product kategori</h2>
+        <div class="categories">
+            <!-- Card untuk Kategori -->
+            <div class="category-card">
+                <img src="topi.jpg" alt="Topi">
+                <h3>Topi</h3>
+                <a href="produk.html">View Produk</a>
+            </div>
+            <div class="category-card">
+                <img src="Jaket jeans.jpg" alt="Bottoms">
+                <h3>Jaket Jeans</h3>
+                <a href="produk.html">View Produk</a>
+            </div>
+            <div class="category-card">
+                <img src="kalung.jpg" alt="Accessories">
+                <h3>Kalung</h3>
+                <a href="produk.html">View Produk</a>
+            </div>
+            <div class="category-card">
+                <img src="kemeja pria.jpg" alt="Sportswear">
+                <h3>Kemeja Pria</h3>
+                <a href="produk.html">View Produk</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
